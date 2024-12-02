@@ -1,9 +1,11 @@
 import React from 'react';
 import './Footer.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook, faTwitter, faInstagram, faPinterest } from '@fortawesome/free-brands-svg-icons';
 
 function Footer() {
   return (
-    <footer className="footer">
+    <footer className="footer h-[500px]">
         <div className="footer-content">
         <div className="footer-section about">
           <h3>ABOUT</h3>
@@ -15,19 +17,41 @@ function Footer() {
         </div>
         <div className="footer-section social">
           <h3>SOCIAL</h3>
-          <div className="social-icons">
-            <a href="#">
-              <img src="/facebook.png" alt="Facebook" />
-            </a>
-            <a href="#">
-              <img src="/twitter.png" alt="Twitter" />
-            </a>
-            <a href="#">
-              <img src="/insta.png" alt="Instagram" />
-            </a>
-            <a href="#">
-              <img src="/pinterest.png" alt="Pinterest" />
-            </a>
+          <div className="social-icons flex">
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-white hover:bg-black hover:text-white w-1/12 text-black"
+              >
+                <FontAwesomeIcon icon={faFacebook} size="1x" />
+              </a>
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-white hover:bg-black hover:text-white w-1/12 text-black"
+              >
+                <FontAwesomeIcon icon={faTwitter} size="1x" />
+              </a>
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-white hover:bg-black hover:text-white w-1/12 text-black"
+              >
+                <FontAwesomeIcon icon={faInstagram} size="1x" />
+              </a>
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-white hover:bg-transparent hover:text-white w-1/12 text-black"
+              >
+                <FontAwesomeIcon icon={faPinterest} size="1x" style={{ color: 'inherit' }} />
+              </a>
+
+
           </div>
         </div>
         <div className="footer-section contact">
@@ -57,4 +81,3 @@ function Footer() {
 }
 
 export default Footer;
-

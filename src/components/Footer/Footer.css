@@ -3,7 +3,10 @@
     color: #f4f4f4;
     padding: 40px 20px;
     font-family: Arial, sans-serif;
-
+    font-size: 1.4em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
   
   .footer-content {
