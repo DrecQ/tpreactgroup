@@ -35,27 +35,27 @@ function RecentPosts() {
   ];
 
   return (
-    <div className="border-4 divide-gray-400 border-gray-200 p-4 ml-9 mb-6">
-    <h2 className="p-2 text-3xl font-bold">Recent Post</h2>
+    <div className="border-4 rounded-lg divide-gray-400 border-gray-200 p-4 ml-9 mb-6">
+    <h2 className="p-2 text-4xl font-bold mt-6 mb-6">Recent Post</h2>
     <div className="divide-y">
       {posts.map((post, index) => (
         <div
           key={index}
-          className="flex items-center space-x-4 p-4"
+          className="flex items-top space-x-4 p-4"
         >
           <img
             src={post.image}
             alt={`Post ${index + 1}`}
-            className="w-20 h-20 object-cover"
+            className="w-20 h-25 object-cover"
           />
           <div>
             <a
               href="#"
-              className="text-red-500 hover:text-red-700 text-2xl font-semibold transition duration-300"
+              className="text-red-500 hover:text-red-600 text-2xl font-semibold transition duration-300"
             >
               {post.title}
             </a>
-            <p className="text-gray-600 text-xl mt-2">{post.description}</p>
+            <p className="text-gray-600 text-2xl mt-2">{post.description}</p>
           </div>
         </div>
       ))}

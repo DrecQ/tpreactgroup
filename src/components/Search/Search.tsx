@@ -2,8 +2,8 @@ import React from 'react';
 
 function Search() {
   return (
-    <div className="p-4 mt-8 flex items-center justify-justify"> 
-      <div className="relative w-full max-w-md ml-6 pr-0 "> 
+    <div className="p-4 mt-8 flex items-center justify-justify">
+      <div className="relative w-full max-w-md ml-6 pr-0 ">
         <input
           type="text"
           placeholder="Search..."
