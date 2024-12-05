@@ -2,11 +2,11 @@ import React from 'react';
 
 function Search() {
   return (
-    <div className="p-4 flex items-center justify-center"> {/* Centrer avec flex */}
-      <div className="relative w-full max-w-md ml-6 pr-0 "> {/* Ajouter `ml-4` pour marge gauche */}
+    <div className="p-4 mt-8 flex items-center justify-justify"> 
+      <div className="relative w-full max-w-md ml-6 pr-0 "> 
         <input
           type="text"
-          placeholder="Rechercher..."
+          placeholder="Search..."
           className="w-full p-2 pl-10 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
         />
         <svg

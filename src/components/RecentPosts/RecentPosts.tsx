@@ -35,7 +35,9 @@ function RecentPosts() {
   ];
 
   return (
-    <div className="border-2 divide-y divide-gray-300 border-gray-200 p-2 ml-9 mb-6 ">
+    <div className="border-4 divide-gray-400 border-gray-200 p-4 ml-9 mb-6">
+    <h2 className="p-2 text-3xl font-bold">Recent Post</h2>
+    <div className="divide-y">
       {posts.map((post, index) => (
         <div
           key={index}
@@ -49,14 +51,15 @@ function RecentPosts() {
           <div>
             <a
               href="#"
-              className="text-blue-500 hover:text-blue-700 text-lg font-semibold transition duration-300"
+              className="text-red-500 hover:text-red-700 text-2xl font-semibold transition duration-300"
             >
               {post.title}
             </a>
-            <p className="text-gray-600 mt-2">{post.description}</p>
+            <p className="text-gray-600 text-xl mt-2">{post.description}</p>
           </div>
         </div>
       ))}
+    </div>
     </div>
   );
 }
